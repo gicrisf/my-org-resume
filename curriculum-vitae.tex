@@ -1,0 +1,196 @@
+% Created 2022-07-27 mer 04:05
+% Intended LaTeX compiler: pdflatex
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% Use roboto and lato for fonts
+\renewcommand{\familydefault}{\sfdefault}
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\usepackage[rm]{roboto}
+\usepackage[defaultsans]{lato}
+\usepackage{paracol}
+\columnratio{0.6} % Set the left/right column width ratio to 6:4.
+\usepackage[bottom]{footmisc}
+\DeclareNameAlias{sortname}{given-family}
+\addbibresource{aidan.bib}
+\usepackage[style=trad-abbrv,sorting=none,sortcites=true,doi=false,url=false,giveninits=true,hyperref]{biblatex}
+\author{Giovanni Crisalfi}
+\date{\today}
+\title{}
+\begin{document}
+
+\name{Giovanni Crisalfi}
+\photoR{2.8cm}{propic-ciliegio.jpg}
+\tagline{Studente}
+
+\personalinfo{
+  \homepage{www.zwitterio.it}
+  \email{giovanni.crisalfi@protonmail.com}
+  \phone{+39 3331604917}
+  \location{Caltagirone, CT}
+  \github{gicrisf}
+  \twitter{gicrisf}
+  % \linkedin{aidan-scannell-82522789/}
+  \dob{27 Dicembre 1995}
+  \driving{Patente B}
+}
+\makecvheader
+
+\begin{paracol}{2}
+
+\begin{quote}
+Studente di CTF appassionato di spettroscopia e simulazioni computazionali.
+Sostenitore dell'Open Source, vivo su Linux e scrivo sia codice che prosa su Emacs.
+Mi interesso di epistemologia, cinema, fumetti e altre lettere.
+\end{quote}
+
+\vspace{.1cm}
+
+\cvsection{Progetti}
+\label{sec:org9314928}
+\cvevent{ESRafel}{ Software for least-squares fitting of ESR/EPR spectra with Monte Carlo methods}{ Marzo 2020 - Marzo 2022}{}
+
+\begin{itemize}
+\item \href{https://github.com/gicrisf/esrafel}{\faGithub gicrisf/esrafel}
+\end{itemize}
+\vspace{.2cm}
+
+\cvtag{Sviluppo Desktop}
+\cvtag{Rust}
+\cvtag{GTK}
+\cvtag{Spettroscopia}
+\par\divider
+
+\cvevent{Zhuia}{ An elegant but still playful theme for Zola}{ Feb. 2022 - Marzo 2022}{}
+
+\begin{itemize}
+\item \href{https://github.com/gicrisf/zhuia}{\faGithub gicrisf/zhuia}
+\end{itemize}
+\vspace{.2cm}
+
+\cvtag{Sviluppo Web}
+\cvtag{Rust}
+\cvtag{Zola}
+
+\par\divider
+
+\cvevent{3D renders}{ Bio/chem molecular renders for fun and blogging}{}{}
+
+\begin{itemize}
+\item \href{https://unsplash.com/@gicrisf}{\faUnsplash @gicrisf}
+\end{itemize}
+\vspace{.2cm}
+
+\cvtag{VMD}
+\cvtag{GIMP}
+\cvtag{Grafica}
+\cvtag{Chimica}
+
+\cvsection{Seminari}
+\label{sec:org1d737ad}
+\cvevent{Festival della Scienza Medica}{ Palazzo Re Enzo - piazza Nettuno 1 - Bologna}{ Anni: 2016 - 2017 - 2018 - 2019}{}
+
+\par\divider
+
+\cvevent{18° Congresso Nazionale Sitox}{ Savoia Hotel Regency Via del Pilastro 2 40127 Bologna}{ 10 Apr. 2018 – 13 Apr. 2018}{}
+\par\divider
+
+\cvevent{Driving the development of bio-based polymers with molecular simulation}{ ChemistryWorld Webinar}{ 13 Apr. 2022}{}
+
+\par\divider
+
+\cvevent{Accelerating first-in-class and best-in-class programs using a large-scale digital chemistry strategy}{ ChemistryWorld Webinar}{ 24 Maggio 2022}{}
+
+\switchcolumn
+
+\cvsection{Competenze}
+\label{sec:orga689fa6}
+\cvtag{Analisi farmaceutica}
+\cvtag{Grafica}
+\cvtag{Data viz}
+
+\vspace{-.1cm}
+
+\cvtag{Rust}
+\cvtag{Vala}
+\cvtag{Python}
+\cvtag{JavaScript}
+
+\vspace{.1cm}
+
+\cvtag{Lisp}
+\cvtag{GTK}
+\cvtag{HTML/CSS}
+\cvtag{Git}
+
+\cvsection{Esperienze}
+\label{sec:org5a7829c}
+\cvevent{Tirocinio in Farmacia Ospedaliera}{ Ospedale Gravina di Caltagirone}{ Ottobre 2020 - Luglio 2021}{}
+
+\par\divider
+
+\cvevent{Tirocinio per tesi sperimentale}{ Dipartimento di Chimica "Giacomo Ciamician" - Unibo}{ Ottobre 2019 - Maggio 2020}{}
+
+\cvsection{Istruzione}
+\label{sec:org75d0adb}
+% \cvevent{\footnote{Awarded if PhD is not completed.} MRes in Robotics \& Autonomous Systems}{University of Bristol | First Class Honours}{Sept 2017 -- Sept 2018}{}
+
+\cvevent{Summer School in Pharmaceutical Analysis}{ Campus di Rimini - Palazzo Ruffi-Briolini}{ 18 Sett. 2017 – 20 Sett. 2017}{}
+\begin{itemize}
+\item Advanced Analytical Methodologies for Adsorption, Distribution, Metabolism, Excretion and Toxicity (ADMET) Studies
+\end{itemize}
+
+\divider
+
+\cvevent{Magistrale a ciclo unico in Chimica e Tecnologia Farmaceutiche}{ Dipartimento di Farmacia e Biotecnologie FABIT | Università di Bologna}{ Sett. 2014 -- In corso}{}
+
+\divider
+
+\cvevent{Diploma}{ Liceo Scientifico E. Majorana | Caltagirone}{ Sett. 2009 -- Giugno 2014}{}
+
+\cvsection{Lingue}
+
+\cvskill{Italiano}{5}
+\divider
+
+\cvskill{Inglese}{4}
+\divider
+
+\cvskill{Francese}{1}
+
+% %% Yeah I didn't spend too much time making all the
+% %% spacing consistent... sorry. Use \smallskip, \medskip,
+% %% \bigskip, \vpsace etc to make ajustments.
+% \medskip
+\end{paracol}
+\end{document}
+\end{document}

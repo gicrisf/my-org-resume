@@ -17,6 +17,7 @@
 \\definecolor{DarkPastelRed}{HTML}{450808}
 \\definecolor{PastelRed}{HTML}{8F0D0D}
 \\definecolor{GoldenEarth}{HTML}{E7D192}
+
 \\colorlet{name}{black}
 \\colorlet{tagline}{PastelRed}
 \\colorlet{heading}{DarkPastelRed}
@@ -60,7 +61,7 @@
 #+LATEX_HEADER: \usepackage[style=trad-abbrv,sorting=none,sortcites=true,doi=false,url=false,giveninits=true,hyperref]{biblatex}
 
 ** Exporter Settings
-#+AUTHOR: Aidan Scannell
+#+AUTHOR: Giovanni Crisalfi
 #+EXPORT_FILE_NAME: ./curriculum-vitae.pdf
 #+OPTIONS: toc:nil title:nil H:1
 ** Macros
@@ -73,22 +74,22 @@
 * CV Header :ignore:
 ** Photo & Tagline :ignore:
 #+begin_export latex
-\name{Aidan Scannell}
-\photoR{2.8cm}{aidan_portrait.jpeg}
-\tagline{PhD Researcher}
+\name{Giovanni Crisalfi}
+\photoR{2.8cm}{propic-ciliegio.jpg}
+\tagline{Studente}
 #+end_export
 
 ** Personal Info :ignore:
 #+begin_export latex
 \personalinfo{
-  \homepage{www.aidanscannell.com}
-  \email{scannell.aidan@gmail.com}
-  \phone{+44 787 558 3912}
-  \location{Bristol, UK}
-  \github{aidanscannell}
-  \linkedin{aidan-scannell-82522789/}
-  \dob{22 April 1994}
-  \driving{UK Driving Licence}
+  \homepage{www.zwitterio.it}
+  \email{giovanni.crisalfi@protonmail.com}
+  \phone{+39 3331604917}
+  \location{Caltagirone, CT}
+  \github{gicrisf}
+  \twitter{gicrisf}
+  \dob{27 Dicembre 1995}
+  \driving{Patente B}
 }
 \makecvheader
 #+end_export
@@ -97,74 +98,21 @@
 #+begin_export latex
 \begin{paracol}{2}
 #+end_export
-** Personal Statement Secondmind :ignore:noexport:
-#+begin_export latex
- \begin{quote}
- ``I am an aspiring researcher with interests at the intersection of probabilistic machine learning and control theory. I am particularly interested in uncertainty quantification and as a result, a great deal of my work focuses on Bayesian non-parametric methods, specifically Gaussian processes and variational inference.''
- \end{quote}
-#+end_export
-** Personal Statement Amazon :ignore:
-#+begin_export latex
- \begin{quote}
- ``I am a PhD researcher with interests at the intersection of probabilistic machine learning and control theory. A great deal of my work focuses on Bayesian non-parametric methods, specifically Gaussian processes, variational inference and decision-making under uncertainty.''
- \end{quote}
-#+end_export
-** Experience
-*** PhD Researcher :ignore:
-{{{cvevent(PhD Researcher, University of Bristol,Sept 2018 -- Ongoing, Bristol\, UK)}}}
 
-# Researching methods for probabilistic inference and control in multimodal dynamical systems. EPSRC Centre for Doctoral Training in Future Autonomous and Robotic Systems (FARSCOPE).
-Researching methods for data-efficient learning and control in multimodal dynamical systems. EPSRC Centre for Doctoral Training in Future Autonomous and Robotic Systems (FARSCOPE).
+** Personal Statement English :ignore:noexport:
+#+begin_quote
+Medicinal chemistry student at Unibo • Into spectroscopy and radicals • Linux citizen • Coding in Rust • Scripting in Python/Lisp • Reading and writing around.
+#+end_quote
+** Personal Statement Italian :ignore:
+#+begin_quote
+Studente di CTF appassionato di spettroscopia e simulazioni computazionali.
+Sostenitore dell'Open Source, vivo su Linux e scrivo sia codice che prosa su Emacs.
+Mi interesso di epistemologia, cinema, fumetti e altre lettere.
+#+end_quote
 
-{{{cvtag(Probabilistic modelling)}}}
-{{{cvtag(Gaussian processes)}}}
-{{{cvtag(Variational inference)}}}
-{{{cvtag(Optimal control)}}}
-{{{cvtag(Trajectory optimisation)}}}
-# {{{cvtag(Model-based reinforcement learning)}}}
+#+latex: \vspace{.1cm}
 
-*** Teaching Assistant :ignore:
-{{{par-div}}}
-{{{cvevent(Teaching Assistant, University of Bristol,Sept 2018 -- Ongoing, Bristol\, UK)}}}
-
-Alongside my PhD I have assisted teaching:
-- [[https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=19%2F20&unitCode=COMS30007][Machine Learning COMS30007]]
-  # This course introduced student to probabilistic machine learning: bayesian linear regression, Gaussian processes, probabilistic PCA, Bayesian optimisation.
-- [[https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=19%2F20&unitCode=COMSM0012][Robotic Systems COMSM0012]]
-  # This course introduced student to probabilistic robotics, e.g. particle filtering.
-- [[https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=19/20\&unitCode=EMATM0042][Intelligent Information Systems EMATM0042]]
-
-{{{cvtag(Communication)}}}
-{{{cvtag(Active listening)}}}
-{{{cvtag(Teaching)}}}
-
-*** Mott MacDonald :ignore:noexport:
-{{{par-div}}}
-
-{{{cvevent(Mechanical Engineer Intern,Mott MacDonald,June 2015 -- August 2015, London\, UK)}}}
-
-# I worked as a mechanical engineer within the building services division where I developed my
-# teamwork skills and learned the importance of knowledge management.
-# I was in charge of optimising the heating, ventilation and air-conditioning of a building a
-# Hackney Wick underground station.
-# I met with external architects to communicate our ideas and I personally overcame logistical issues
-# and improved a systems efficiency, resulting in the designs approval.
-# I consistently met deadlines whilst working under pressure and was offered future employment.
-# This internship strengthened my desire to move away from engineering and pursue a research driven
-# career involving mathematics and programming.
-
-- Developed teamwork skills, learning the importance of knowledge management within a team.
-- Overcame logistical issues and improved a system’s efficiency, resulting in the design’s approval.
-- Consistently met deadlines whilst working under pressure.
-- Conducted a feasibility study and estimated project costs that informed subsequent action.
-- Located an error and proposed a solution. Communicating this to relevant managers resulted in its successful implementation.
-- Mott MacDonald offered me future employment following my summer placement.
-  
-{{{cvtag(Engineering)}}}
-{{{cvtag(Teamwork)}}}
-{{{cvtag(Industry)}}}
-
-** Publications
+** Publications :noexport:
 #+begin_export latex
 \nocite{*}
 % \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
@@ -174,23 +122,92 @@ Alongside my PhD I have assisted teaching:
 \printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
 #+end_export
 
-** Projects
-*** Active Learning Secondmind :ignore:noexport:
+** Progetti
+*** Esrafel :ignore:
+{{{cvevent(ESRafel, Software for least-squares fitting of ESR/EPR spectra with Monte Carlo methods, Marzo 2020 - Marzo 2022)}}}
 
-# {{{cvevent(Investigating Exploration-Exploitation in Multimodal Dynamical Systems (Academic), University of Bristol, May 2021 - Ongoing, Bristol\, UK)}}}
-{{{cvevent(Exploration of Operatable Dynamics Modes in Multimodal Dynamical Systems, University of Bristol, May 2021 - Ongoing, Bristol\, UK)}}}
+- [[https://github.com/gicrisf/esrafel][\faGithub gicrisf/esrafel]]
+#+latex: \vspace{.2cm}
 
-- Developing data-efficient techniques for exploration in multimodal dynamical systems.
-- The goal of this project is to explore a single dynamics mode that is known to be operatable whilst avoiding other modes.
-  # unoperatable capable of remaining in a single dynamics mode during exploration.
+{{{cvtag(Sviluppo Desktop)}}}
+{{{cvtag(Rust)}}}
+{{{cvtag(GTK)}}}
+{{{cvtag(Spettroscopia)}}}
 
-# {{{cvtag(JAX)}}}
-{{{cvtag(Bayesian optimisation)}}}
-{{{cvtag(Gaussian processes)}}}
-{{{cvtag(Optimal control)}}}
+*** Zhuia :ignore:
+{{{par-div}}}
+
+{{{cvevent(Zhuia, An elegant but still playful theme for Zola, Feb. 2022 - Marzo 2022)}}}
+
+- [[https://github.com/gicrisf/zhuia][\faGithub gicrisf/zhuia]]
+#+latex: \vspace{.2cm}
+
+{{{cvtag(Sviluppo Web)}}}
+{{{cvtag(Rust)}}}
+{{{cvtag(Zola)}}}
+# {{{cvtag(Jinja2 (Tera))}}}
+
+*** Gotosi :ignore:noexport:
+{{{par-div}}}
+
+{{{cvevent(Gotosi, Isotope oriented periodic table of elements, Feb. 2021 - Maggio 2021)}}}
+
+- [[https://github.com/gicrisf/gotosi-gtk][\faGithub gicrisf/gotosi-gtk]]
+#+latex: \vspace{.2cm}
+
+{{{cvtag(Sviluppo Desktop)}}}
+{{{cvtag(Vala)}}}
+{{{cvtag(GTK)}}}
+{{{cvtag(Chimica)}}}
+
+*** Unsplash :ignore:
+{{{par-div}}}
+
+{{{cvevent(3D renders, Bio/chem molecular renders for fun and blogging,)}}}
+
+- [[https://unsplash.com/@gicrisf][\faUnsplash @gicrisf]]
+#+latex: \vspace{.2cm}
+
+{{{cvtag(VMD)}}}
+{{{cvtag(GIMP)}}}
+{{{cvtag(Grafica)}}}
+{{{cvtag(Chimica)}}}
+
+** Seminari
+*** Festival della scienza medica :ignore:
+
+{{{cvevent(Festival della Scienza Medica, Palazzo Re Enzo - piazza Nettuno 1 - Bologna, Anni: 2016 - 2017 - 2018 - 2019)}}}
+
+#+begin_comment
+- 19/05/2016 – 22/05/2016: 'Le età della vita'
+- 20/04/2017 – 23/04/2017: 'Fra innovazione e tradizione'
+- 03/05/2018 – 06/05/2018: 'Il tempo della cura'
+- 09/05/2019 – 12/05/2019: 'Intelligenza della salute'
+#+end_comment
+
+*** SITOX :ignore:
+
+{{{par-div}}}
+
+{{{cvevent(18° Congresso Nazionale Sitox, Savoia Hotel Regency Via del Pilastro 2 40127 Bologna, 10 Apr. 2018 – 13 Apr. 2018)}}}
+
+*** ChemistryWorld :ignore:
+
+{{{par-div}}}
+
+{{{cvevent(Driving the development of bio-based polymers with molecular simulation, ChemistryWorld Webinar, 13 Apr. 2022)}}}
+
+{{{par-div}}}
+
+{{{cvevent(Accelerating first-in-class and best-in-class programs using a large-scale digital chemistry strategy, ChemistryWorld Webinar, 24 Maggio 2022)}}}
+
+** Newpage :ignore:noexport:
+{{{new-page}}}
+
+** Projects (Cont.) :ignore:noexport:
 
 *** Active Learning :ignore:
-
+{{{par-div}}}
 # {{{cvevent(Investigating Exploration-Exploitation in Multimodal Dynamical Systems (Academic), University of Bristol, May 2021 - Ongoing, Bristol\, UK)}}}
 {{{cvevent(Optimal Control in Multimodal Dynamical Systems as Probabilistic Inference, University of Bristol, May 2021 - Ongoing, Bristol\, UK)}}}
 
@@ -200,53 +217,6 @@ Alongside my PhD I have assisted teaching:
 {{{cvtag(Variational inference)}}}
 {{{cvtag(Gaussian processes)}}}
 {{{cvtag(Optimal control)}}}
-
-** Newpage :ignore:
-{{{new-page}}}
-
-** Projects (Cont.)
-*** Traj Opt :ignore:
-# {{{divider}}}
-
-{{{cvevent(Trajectory Optimisation in Learned Multimodal Dynamical Systems, University of Bristol, Sept 2019 - March 2021, Bristol\, UK)}}}
-
-- Synergising Bayesian inference and Riemannian geometry to control multimodal dynamical systems.
-   # Learning multimodal probabilistic transition dynamics.
-- Finds trajectories that 1) remain in a desired dynamics mode, 2) avoid regions of the dynamics with high epistemic uncertainty.
-- [[https://github.com/aidanscannell/trajectory-optimisation-in-learned-multimodal-dynamical-systems][\faGithub aidanscannell/trajectory-optimisation-in-learned-multimodal-dynamical-systems]]
-# - [[https://www.aidanscannell.com/publication/trajectory-optimisation-in-learned-multimodal-dynamical-systems-via-latent-ode-collocation/paper.pdf][\faBook published @ ICRA 2021]]
-
-{{{cvtag(JAX)}}}
-{{{cvtag(Probabilistic geometries)}}}
-{{{cvtag(Optimal control)}}}
-
-
-*** SVGP :ignore:
-{{{par-div}}}
-
-{{{cvevent(Identifiable Mixtures of Sparse Variational Gaussian Process Experts, University of Bristol, Sept 2018 - Ongoing, Bristol\, UK)}}}
-
-- Improving identifiability and scalability in the Mixtures of Gaussian Process Experts model with GP-based gating networks.
-- Variational inference based on sparse GP approximations.
--  [[https://github.com/aidanscannell/mogpe][\faGithub aidanscannell/mogpe]]
-
-{{{cvtag(GPflow)}}}
-{{{cvtag(TensorFlow)}}}
-{{{cvtag(Gaussian processes)}}}
-{{{cvtag(Variational inference)}}}
-
-*** GPJax :ignore:noexport:
-{{{divider}}}
-
-{{{cvevent(Gaussian Processes in JAX (Code), Emacs, March 2021 - Ongoing, Bristol\, UK)}}}
-
-- Minimal Gaussian process library in JAX with a simple (custom) approach to state management.
-- \faGithub [[https://github.com/aidanscannell/GPJax][aidanscannell/GPJax]]
-
-{{{cvtag(Gaussian processes)}}}
-{{{cvtag(Variational inference)}}}
-{{{cvtag(JAX)}}}
-{{{cvtag(SVGP)}}}
 
 ** A day of my life :noexport:
 # #+begin_export latex
@@ -273,7 +243,7 @@ Alongside my PhD I have assisted teaching:
 ** Newpage :ignore:noexport:
 {{{new-page}}}
 
-** Volunteering
+** Volunteering :noexport:
 *** FARSCOPE Course Rep :ignore:
 {{{cvevent(Cohort Representative, FARSCOPE CDT, Sept 2018 - Ongoing, Bristol\, UK)}}}
 # - I represent myself and fellow CDT students in management meetings where I communicate ideas and information between students and management.
@@ -329,7 +299,7 @@ Each year, as part of Formula Student, students design, build and race a single 
 {{{cvtag(Leadership)}}}
 {{{cvtag(Time Management)}}}
 
-** Invited Talks
+** Invited Talks :noexport:
 *** Geometry Talk :ignore:
 {{{cvevent(Synergising Bayesian Inference and Probabilistic Geometries for Robotic Control, Cognitive Systems - Technical University of Denmark (DTU), 18 March 2021, Zoom)}}}
 # - Presented a method for controlling multimodal dynamical systems synergising Bayesian inference and probabilistic geometries.
@@ -345,60 +315,66 @@ Each year, as part of Formula Student, students design, build and race a single 
 \switchcolumn
 #+end_export
 
-** Skills
+** Competenze
+{{{cvtag(Analisi farmaceutica)}}}
+{{{cvtag(Grafica)}}}
+{{{cvtag(Data viz)}}}
+
+#+latex: \vspace{-.1cm}
+
+{{{cvtag(Rust)}}}
+{{{cvtag(Vala)}}}
 {{{cvtag(Python)}}}
-{{{cvtag(TensorFlow)}}}
-{{{cvtag(GPflow)}}}
-{{{cvtag(JAX)}}}
-{{{cvtag(NumPy)}}}
-{{{cvtag(SciPy)}}}
-{{{cvtag(Matplotlib)}}}
-{{{cvtag(GPy)}}}
+{{{cvtag(JavaScript)}}}
 
-{{{divider}}}
+#+latex: \vspace{.1cm}
 
-{{{cvtag(Java)}}}
-{{{cvtag(C++)}}}
-{{{cvtag(MATLAB)}}}
-{{{cvtag(ROS)}}}
+{{{cvtag(Lisp)}}}
+{{{cvtag(GTK)}}}
+{{{cvtag(HTML/CSS)}}}
+{{{cvtag(Git)}}}
 
-{{{divider}}}
+** Esperienze
+{{{cvevent(Tirocinio in Farmacia Ospedaliera, Ospedale Gravina di Caltagirone, Ottobre 2020 - Luglio 2021)}}}
 
+{{{par-div}}}
 
-{{{cvtag(Git/GitHub)}}}
-{{{cvtag(LaTeX)}}}
-{{{cvtag(Org-mode)}}}
+{{{cvevent(Tirocinio per tesi sperimentale, Dipartimento di Chimica "Giacomo Ciamician" - Unibo, Ottobre 2019 - Maggio 2020)}}}
 
-** Education
-{{{cvevent(PhD\ in Bayesian Machine Learning for Robotic Control, University of Bristol, Sept 2018 - Ongoing,)}}}
-- \faBook Probabilistic Inference for Learning and Control in Multimodal Dynamical Systems
+** Istruzione
+# {{{cvevent(PhD\ in Bayesian Machine Learning for Robotic Control, University of Bristol, Sept 2018 - Ongoing,)}}}
+# - \faBook Probabilistic Inference for Learning and Control in Multimodal Dynamical Systems
 
-{{{divider}}}
+# {{{divider}}}
 
-{{{cvevent(Gaussian Process and Uncertainty Quantification Summer School (GPSS), University of Sheffield, Sept 2019 - Sept 2019,)}}}
+# {{{cvevent(Gaussian Process and Uncertainty Quantification Summer School (GPSS), University of Sheffield, Sept 2019 - Sept 2019,)}}}
 
-{{{divider}}}
+# {{{divider}}}
 
-{{{cvevent(Machine Learning Summer School Moscow (MLSS), Skoltech, Aug 2019 - Sept 2019,)}}}
-
-{{{divider}}}
+# {{{cvevent(Machine Learning Summer School Moscow (MLSS), Skoltech, Aug 2019 - Sept 2019,)}}}
 
 # {{{cvevent(M.Res.\ in Robotics \& Autonomous Systems, University of Bristol | First Class Honours, Sept 2017 -- Sept 2018,)}}}
 # {{{cvevent(a \footnote{Not official - will be awarded if Ph.D. is not completed.} M.Res.\ in Robotics \& Autonomous Systems,University of Bristol,Sept 2017 -- Sept 2018,)}}}
 #+BEGIN_EXPORT latex
-\cvevent{\footnote{Awarded if PhD is not completed.} MRes in Robotics \& Autonomous Systems}{University of Bristol | First Class Honours}{Sept 2017 -- Sept 2018}{}
+% \cvevent{\footnote{Awarded if PhD is not completed.} MRes in Robotics \& Autonomous Systems}{University of Bristol | First Class Honours}{Sept 2017 -- Sept 2018}{}
 #+END_EXPORT
 # - First Class Honours
-- \faBook [[https://www.aidanscannell.com/project/uncertain-agentspeak/][Extending BDI Agents to Model and Reason with Uncertainty]]
+# - \faBook [[https://www.aidanscannell.com/project/uncertain-agentspeak/][Extending BDI Agents to Model and Reason with Uncertainty]]
 
+{{{cvevent(Summer School in Pharmaceutical Analysis, Campus di Rimini - Palazzo Ruffi-Briolini, 18 Sett. 2017 – 20 Sett. 2017)}}}
+- Advanced Analytical Methodologies for Adsorption, Distribution, Metabolism, Excretion and Toxicity (ADMET) Studies
 
 {{{divider}}}
 
-{{{cvevent(MEng in Mechanical Engineering, University of Bristol | First Class Honours, Sept 2012 -- June 2016,)}}}
+{{{cvevent(Magistrale a ciclo unico in Chimica e Tecnologia Farmaceutiche, Dipartimento di Farmacia e Biotecnologie FABIT | Università di Bologna, Sett. 2014 -- In corso)}}}
 # - First Class Honours \\
-- Graduated in top 10% of cohort
+# - Graduated in top 10% of cohort
 
-** Newpage :ignore:
+{{{divider}}}
+
+{{{cvevent(Diploma, Liceo Scientifico E. Majorana | Caltagirone, Sett. 2009 -- Giugno 2014)}}}
+
+** Newpage :ignore:noexport:
 #+BEGIN_EXPORT latex
 \newpage
 #+END_EXPORT
@@ -425,7 +401,7 @@ Each year, as part of Formula Student, students design, build and race a single 
 # \cvachievement{\faHeartbeat}{British University Snowboard Slalom Champion}{Won all national British university slalom competitions in 2017-2018.}
 # #+end_export
 
-** Achievements 
+** Achievements :noexport:
 {{{cvachievement(\faTrophy, Full Sporting Colours, Awarded full colours for outstanding achievements in snowboarding. Multiple gold medals in British University Snowboard Championships.)}}}
 
 {{{divider}}}
@@ -444,17 +420,17 @@ Each year, as part of Formula Student, students design, build and race a single 
 
 {{{cvachievement(\faTrophy, The Duke of Edinburgh's Award, Bronze/Silver/Gold)}}}
 
-** Languages :noexport:
+** Lingue :ignore:
 #+begin_export latex
-% \cvsection{Languages}
+\cvsection{Lingue}
 
-% \cvskill{English}{5}
-% \divider
+\cvskill{Italiano}{5}
+\divider
 
-% \cvskill{Spanish}{4}
-% \divider
+\cvskill{Inglese}{4}
+\divider
 
-% \cvskill{German}{3}
+\cvskill{Francese}{1}
 
 % %% Yeah I didn't spend too much time making all the
 % %% spacing consistent... sorry. Use \smallskip, \medskip,
@@ -462,8 +438,8 @@ Each year, as part of Formula Student, students design, build and race a single 
 % \medskip
 #+end_export
 
-\newpage
-** References
+# \newpage
+** References :noexport:
 #+begin_export latex
 % \cvref{name}{email}{mailing address}
 \cvref{Prof.\ Arthur Richards}{University of Bristol}{arthur.richards@bristol.ac.uk}
@@ -472,6 +448,13 @@ Each year, as part of Formula Student, students design, build and race a single 
 \cvref{Dr.\ Carl Henrik Ek}{University of Cambridge}{che29@cam.ac.uk}
 % {Address Line 1\\Address line 2}
 #+end_export
+** GDPR :ignore:noexport:
+
+{{{divider}}}
+
+#+latex: {\footnotesize
+Autorizzo il trattamento dei miei dati personali presenti nel CV ai sensi dell’art. 13 d. lgs. 30 giugno 2003 n. 196 - “Codice in materia di protezione dei dati personali” e dell’art. 13 GDPR 679/16 - “Regolamento europeo sulla protezione dei dati personali”.
+#+latex: }
 
 * Back Matter :ignore:
 #+begin_export latex
